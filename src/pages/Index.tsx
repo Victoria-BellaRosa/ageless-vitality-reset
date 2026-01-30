@@ -4,7 +4,6 @@ import MyStory from "@/components/MyStory";
 import WhyItWorks from "@/components/WhyItWorks";
 import ExpertAuthority from "@/components/ExpertAuthority";
 import WhatYouWillDiscover from "@/components/WhatYouWillDiscover";
-import FreeOffer from "@/components/FreeOffer";
 import Footer from "@/components/Footer";
 
 const Index = () => {
@@ -17,7 +16,6 @@ const Index = () => {
         <WhyItWorks />
         <ExpertAuthority />
         <WhatYouWillDiscover />
-        <FreeOffer />
       </main>
       <Footer />
     </div>

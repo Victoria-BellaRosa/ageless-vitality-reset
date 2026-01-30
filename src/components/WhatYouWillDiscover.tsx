@@ -1,4 +1,4 @@
-import { Check } from "lucide-react";
+import { Check, FileText } from "lucide-react";
 
 const WhatYouWillDiscover = () => {
   const discoveries = [
@@ -29,41 +29,57 @@ const WhatYouWillDiscover = () => {
   ];
 
   return (
-    <section className="section-padding bg-card">
+    <section id="free-offer" className="section-padding bg-background">
       <div className="container-narrow">
-        <h3 className="font-heading text-2xl md:text-3xl text-heading text-center mb-4">
+        <h2 className="font-heading text-2xl md:text-3xl text-heading text-center mb-4">
           What You'll Discover Inside the Free Guide
-        </h3>
+        </h2>
         
         <p className="text-center text-foreground mb-12 max-w-xl mx-auto">
           "The Breath & Balance Reset" is your introduction to the Gentle Keto Protocol—
           packed with actionable insights you can start using today.
         </p>
         
-        <div className="space-y-6">
-          {discoveries.map((item, index) => (
-            <div 
-              key={index}
-              className="flex items-start gap-4 bg-background p-6 transition-all duration-200 hover:shadow-md"
-            >
-              <div className="flex-shrink-0 w-8 h-8 bg-primary flex items-center justify-center">
-                <Check className="w-5 h-5 text-primary-foreground" strokeWidth={3} />
-              </div>
-              <div>
-                <h4 className="font-heading text-lg text-heading mb-2">
-                  {item.title}
-                </h4>
-                <p className="text-foreground leading-relaxed">
-                  {item.description}
-                </p>
+        <div className="grid md:grid-cols-[280px,1fr] gap-10 md:gap-12 items-start">
+          {/* PDF Mockup Placeholder */}
+          <div className="flex justify-center md:justify-start">
+            <div className="image-placeholder w-full max-w-[280px] h-[380px] md:h-[420px]">
+              <div className="flex flex-col items-center justify-center h-full text-center p-6">
+                <FileText className="w-16 h-16 text-muted-foreground/60 mb-4" />
+                <span className="text-sm text-muted-foreground font-heading">
+                  "The Breath & Balance Reset"
+                </span>
+                <span className="text-xs text-muted-foreground mt-2">PDF Guide Mockup</span>
               </div>
             </div>
-          ))}
+          </div>
+          
+          {/* Bullet Points */}
+          <div className="space-y-5">
+            {discoveries.map((item, index) => (
+              <div 
+                key={index}
+                className="flex items-start gap-4"
+              >
+                <div className="flex-shrink-0 w-7 h-7 bg-primary flex items-center justify-center mt-0.5">
+                  <Check className="w-4 h-4 text-primary-foreground" strokeWidth={3} />
+                </div>
+                <div>
+                  <h4 className="font-heading text-lg text-heading mb-1">
+                    {item.title}
+                  </h4>
+                  <p className="text-foreground leading-relaxed text-base">
+                    {item.description}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
         
         <div className="text-center mt-12">
           <button className="btn-primary text-lg px-10 py-5">
-            Get My Free Reset Guide
+            Yes, I Want to Reclaim My Vitality
           </button>
           <p className="mt-4 text-sm text-muted-foreground">
             Instant download • No spam • Your privacy is protected

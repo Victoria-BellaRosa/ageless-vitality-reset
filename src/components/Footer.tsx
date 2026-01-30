@@ -7,7 +7,7 @@ const Footer = () => {
         </h4>
         
         <button className="btn-primary mb-10">
-          Get My Free Reset Guide
+          Yes, I Want to Reclaim My Vitality
         </button>
         
         <p className="text-sm text-footer-foreground/70 leading-relaxed max-w-lg mx-auto">
@@ -18,7 +18,7 @@ const Footer = () => {
         
         <div className="mt-8 pt-8 border-t border-footer-foreground/20">
           <p className="text-xs text-footer-foreground/50">
-            © {new Date().getFullYear()} Ageless Vitality. All rights reserved.
+            © {new Date().getFullYear()} Joyful Keto Studio - Vee Maris | Ageless Vitality | All rights reserved.
           </p>
         </div>
       </div>

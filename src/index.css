@@ -14,11 +14,15 @@
     --card: 100 33% 93%; /* Mint #EAF3E7 */
     --card-foreground: 87 23% 29%;
     
+    --card-light: 40 20% 98%; /* #FAFAF9 */
+    
     --popover: 0 0% 97%;
     --popover-foreground: 87 23% 29%;
     
     --primary: 104 16% 68%; /* Button #A6BAA2 */
     --primary-foreground: 150 8% 12%;
+    
+    --primary-hover: 105 14% 55%; /* #8DA188 */
     
     --secondary: 96 22% 71%; /* Thin Sage #B4C5A4 */
     --secondary-foreground: 150 8% 12%;
@@ -33,6 +37,8 @@
     --destructive-foreground: 0 0% 98%;
     
     --border: 96 22% 80%;
+    --border-outer: 99 23% 56%; /* #89A178 */
+    --border-btn: 105 14% 55%; /* #8DA188 */
     --input: 96 22% 80%;
     --ring: 104 16% 68%;
     
@@ -61,10 +67,12 @@
     --foreground: 105 25% 92%;
     --card: 150 8% 15%;
     --card-foreground: 105 25% 92%;
+    --card-light: 150 8% 14%;
     --popover: 150 8% 12%;
     --popover-foreground: 105 25% 92%;
     --primary: 104 16% 68%;
     --primary-foreground: 150 8% 12%;
+    --primary-hover: 105 14% 55%;
     --secondary: 96 22% 30%;
     --secondary-foreground: 105 25% 92%;
     --muted: 150 8% 20%;
@@ -74,6 +82,8 @@
     --destructive: 0 62% 30%;
     --destructive-foreground: 0 0% 98%;
     --border: 150 8% 25%;
+    --border-outer: 99 23% 40%;
+    --border-btn: 105 14% 40%;
     --input: 150 8% 25%;
     --ring: 104 16% 68%;
     --heading: 105 25% 92%;
@@ -93,6 +103,12 @@
 @layer base {
   * {
     @apply border-border;
+    border-radius: 0 !important;
+    font-weight: 400 !important;
+  }
+  
+  strong, b, .font-semibold, .font-bold, .font-medium {
+    font-weight: 600 !important;
   }
 
   body {
@@ -113,15 +129,23 @@
   .btn-primary {
     @apply bg-primary text-primary-foreground px-8 py-4 font-semibold 
            tracking-wide uppercase text-sm transition-all duration-200
-           hover:opacity-90 active:scale-[0.98];
+           hover:bg-primary-hover active:scale-[0.98];
   }
 
   .card-mint {
     @apply bg-card p-8 md:p-10;
   }
+  
+  .card-light {
+    @apply bg-card-light p-8 md:p-10;
+  }
 
   .section-padding {
     @apply py-16 md:py-20;
+  }
+  
+  .image-placeholder {
+    @apply bg-secondary/50 border-2 border-dashed border-border-outer flex items-center justify-center text-muted-foreground;
   }
 }
 
@@ -140,5 +164,17 @@
 
   .text-footer {
     color: hsl(var(--footer-foreground));
+  }
+  
+  .bg-card-light {
+    background-color: hsl(var(--card-light));
+  }
+  
+  .bg-primary-hover {
+    background-color: hsl(var(--primary-hover));
+  }
+  
+  .border-border-outer {
+    border-color: hsl(var(--border-outer));
   }
 }
