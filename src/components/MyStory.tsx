@@ -1,14 +1,16 @@
+import { Image } from "lucide-react";
+
 const MyStory = () => {
   return (
-    <section className="section-padding bg-background">
+    <section className="section-padding bg-card">
       <div className="container-narrow">
-        <h3 className="font-heading text-2xl md:text-3xl text-heading text-center mb-10">
+        <h2 className="font-heading text-2xl md:text-3xl text-heading text-center mb-10">
           My Story: The Day I Almost Lost Everything
-        </h3>
+        </h2>
         
         <div className="space-y-6 text-lg leading-relaxed text-foreground">
           <p>
-            It was 6 AM on a pristine 50-meter yacht off the coast of Monaco. The guests were 
+            It was 6 AM on a pristine 30-meter yacht off the coast of Bodrum, Turkey. The guests were 
             expecting a five-course breakfast, and I—the solo chef responsible for feeding some 
             of the world's wealthiest families—couldn't open my eyes.
           </p>
@@ -26,12 +28,12 @@ const MyStory = () => {
           
           <p>
             For weeks, I had been pushing through. Popping painkillers like candy. Using 
-            prescription nasal sprays that gave me brief relief but always made things worse 
+            prescription nasal sprays gave me brief relief but always made things worse 
             in the long run. I was exhausted, foggy, and my once-sharp culinary instincts 
             were dulled by constant, unrelenting pain.
           </p>
           
-          <div className="card-mint my-10">
+          <div className="bg-background p-8 md:p-10 my-10">
             <p className="text-xl text-heading font-heading italic text-center">
               "Is this too much for you?"
             </p>
@@ -42,9 +44,17 @@ const MyStory = () => {
             </p>
           </div>
           
+          {/* Yacht Image Placeholder */}
+          <div className="image-placeholder w-full h-64 md:h-80 my-10">
+            <div className="flex flex-col items-center justify-center h-full text-center p-4">
+              <Image className="w-16 h-16 text-muted-foreground/60 mb-2" />
+              <span className="text-sm text-muted-foreground">Luxury Yacht in Bodrum / Chef's Kitchen</span>
+            </div>
+          </div>
+          
           <p>
             Standing there in that galley kitchen, gripping the stainless steel counter for 
-            balance because my vestibular system was so compromised I felt like I was on 
+            balance because my vestibular system was so compromised, I felt like I was on 
             a ship even when docked, I made a decision.
           </p>
           

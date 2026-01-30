@@ -1,10 +1,10 @@
 const WhyItWorks = () => {
   return (
-    <section className="section-padding bg-card">
+    <section className="section-padding bg-background">
       <div className="container-narrow">
-        <h3 className="font-heading text-2xl md:text-3xl text-heading text-center mb-4">
-          Why This Approach Actually Works
-        </h3>
+        <h2 className="font-heading text-2xl md:text-3xl text-heading text-center mb-4">
+          Why This Approach Actually Works: It's Not Just About What You Eat; It's About How Your Body Breathes
+        </h2>
         
         <p className="text-center text-foreground mb-12 max-w-xl mx-auto">
           When conventional medicine failed me, I turned to the science of chronic inflammation—
@@ -13,9 +13,9 @@ const WhyItWorks = () => {
         
         <div className="space-y-8 text-lg leading-relaxed text-foreground">
           <div>
-            <h4 className="font-heading text-xl text-heading mb-3">
+            <h3 className="font-heading text-xl text-heading mb-3">
               The Inflammation Connection
-            </h4>
+            </h3>
             <p>
               Most people don't realize that chronic sinus issues, persistent headaches, brain fog, 
               and even balance problems often share a common root: <strong>systemic inflammation</strong>. 
@@ -26,9 +26,9 @@ const WhyItWorks = () => {
           </div>
           
           <div>
-            <h4 className="font-heading text-xl text-heading mb-3">
+            <h3 className="font-heading text-xl text-heading mb-3">
               The "Gentle Keto" Difference
-            </h4>
+            </h3>
             <p>
               Standard ketogenic diets are often too extreme—they create stress, are difficult to 
               maintain, and can actually increase inflammation in some people. My approach is different. 
@@ -55,9 +55,9 @@ const WhyItWorks = () => {
           </div>
           
           <div>
-            <h4 className="font-heading text-xl text-heading mb-3">
+            <h3 className="font-heading text-xl text-heading mb-3">
               The Mind-Body Integration
-            </h4>
+            </h3>
             <p>
               Here's what my psychology background taught me: <strong>knowledge alone doesn't change 
               behavior</strong>. You can know exactly what to eat and still reach for the wrong foods. 
@@ -67,8 +67,8 @@ const WhyItWorks = () => {
             </p>
           </div>
           
-          <div className="bg-background p-8 mt-10">
-            <p className="text-center text-heading font-heading text-xl">
+          <div className="bg-card p-8 mt-10">
+            <p className="text-center text-heading font-heading text-xl italic">
               "The combination of cutting-edge nutritional science with behavioral psychology 
               is what makes this approach different from everything else out there."
             </p>
