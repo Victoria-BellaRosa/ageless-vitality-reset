@@ -65,7 +65,7 @@ export default {
       },
       fontFamily: {
         heading: ['Georgia', 'Times New Roman', 'serif'],
-        sans: ['Inter', 'system-ui', 'sans-serif'],
+        sans: ['Arial', 'Helvetica', 'sans-serif'],
       },
       borderRadius: {
         lg: "var(--radius)",

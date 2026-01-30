@@ -1,7 +1,9 @@
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
-import RockBottomSection from "@/components/RockBottomSection";
-import ExpertiseBlock from "@/components/ExpertiseBlock";
+import MyStory from "@/components/MyStory";
+import WhyItWorks from "@/components/WhyItWorks";
+import ExpertAuthority from "@/components/ExpertAuthority";
+import WhatYouWillDiscover from "@/components/WhatYouWillDiscover";
 import FreeOffer from "@/components/FreeOffer";
 import Footer from "@/components/Footer";
 
@@ -11,8 +13,10 @@ const Index = () => {
       <Navbar />
       <main className="flex-1">
         <Hero />
-        <RockBottomSection />
-        <ExpertiseBlock />
+        <MyStory />
+        <WhyItWorks />
+        <ExpertAuthority />
+        <WhatYouWillDiscover />
         <FreeOffer />
       </main>
       <Footer />
