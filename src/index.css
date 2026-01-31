@@ -123,8 +123,9 @@
 
 @layer components {
   .container-narrow {
-    @apply max-w-[760px] mx-auto px-6;
+    @apply w-full max-w-7xl mx-auto px-6;
   }
+}
 
   .btn-primary {
     @apply bg-primary text-primary-foreground px-8 py-4 font-semibold 
