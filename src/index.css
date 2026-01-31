@@ -148,7 +148,6 @@
   .image-placeholder {
     @apply bg-secondary/50 border-2 border-dashed border-border-outer flex items-center justify-center text-muted-foreground;
   }
-}
 
 @layer utilities {
   .text-heading {
